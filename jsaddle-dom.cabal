@@ -1,6 +1,6 @@
 cabal-version: 2.2
 name: jsaddle-dom
-version: 0.9.5.0
+version: 0.9.9.0
 build-type: Simple
 license: MIT
 license-file: LICENSE
@@ -24,7 +24,7 @@ library
 
     if impl(ghcjs -any)
         build-depends:
-            ghcjs-base >=0.2.0.0 && <1.1,
+            ghcjs-base >=0.2.0.0 && <0.9,
             ghcjs-prim -any,
             ghc-prim -any
     if arch(javascript)
